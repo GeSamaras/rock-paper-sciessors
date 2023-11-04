@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Rock Paper Scissors</h1>
+        <h2>Choose your weapon</h2>
+    </header>
+    <div class="selections">
+        <button class="selection"  data-selection="rock">
+            ✊
+        </button>
+        <button class="selection"  data-selection="paper">
+            🖐
+        </button>
+        <button class="selection"  data-selection="scissors">
+            ✌
+        </button>
+    </div>
+    <div class="results">
+        <div>
+            Player
+            <span class="player-score" data-your-score>0</span>
+        </div>
+        <div data-final-column>
+            Computer
+            <span class="player-score" data-computer-score>0</span>
+        </div>
+    </div>
+
 </body>
 </html>

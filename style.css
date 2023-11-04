@@ -1,0 +1,53 @@
+body {
+    background-color: darkslategray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.selection {
+    display: flex;
+    justify-content: center;
+    border: 4px solid darkcyan;
+    border-radius: 8px;
+    padding: 36px 24px;
+    font-size: 2rem;
+}
+
+.selection:hover {
+    background-color: darkcyan;
+    transform: scale3d(1.1, 1.1, 1.1);
+    color: white;
+    cursor: pointer;
+}
+
+.results {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    color:cadetblue ;
+}
+
+.player-score {
+    margin-left: .1rem;
+    font-size: .5rem;
+    color: white;
+}
+
+.result-selection {
+    opacity: 0.3;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+}
